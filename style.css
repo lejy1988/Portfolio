@@ -93,3 +93,47 @@ nav-links {
 #social-footer a:hover {
   text-decoration: underline;
 }
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 2rem;
+}
+
+.project {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 1rem;
+  transition: transform 0.3s;
+}
+
+.project:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.project img {
+  width: 250px;
+  border-radius: 10px;
+}
+
+.project-info {
+  flex: 1;
+}
+
+.project-info a {
+  margin-right: 1rem;
+  text-decoration: none;
+  color: #fff;
+  background-color: #0073e6;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+.project-info a:hover {
+  background-color: #005bb5;
+}
